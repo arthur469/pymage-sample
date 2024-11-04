@@ -1,67 +1,67 @@
 # Pymage Downloader
 
-Pymage Downloader est un outil simple et efficace pour télécharger des images aléatoires depuis [Lorem Picsum](https://picsum.photos/). Il propose une interface graphique et une interface en ligne de commande.
+Pymage Downloader is a simple and efficient tool for downloading random images from [Lorem Picsum](https://picsum.photos/). It offers both a graphical interface and a command-line interface.
 
-## Fonctionnalités
+## Features
 
-- Téléchargement asynchrone d'images
-- Interface graphique conviviale
-- Support de la ligne de commande
-- Dimensions d'images personnalisables
-- Option de dimensions aléatoires
-- Journalisation des opérations
+- Asynchronous image downloading
+- User-friendly graphical interface
+- Command-line support
+- Customizable image dimensions
+- Random dimensions option
+- Operation logging
 
-## Prérequis
+## Prerequisites
 
-Pour installer les dépendances nécessaires :
+To install the required dependencies:
 
     pip install -r requirements.txt
 
-## Utilisation
+## Usage
 
-### Interface Graphique
+### Graphical Interface
 
-Lancez simplement le script sans arguments :
+Simply run the script without arguments:
 
     python main.py
 
-### Ligne de Commande
+### Command Line
 
     python main.py --sizes "4@800x800,2@1920x1080,3@random"
 
-### Format des Spécifications
+### Specification Format
 
-Les dimensions sont spécifiées au format suivant :
-- `nombre@largeurxhauteur` : Pour des dimensions fixes
-- `nombre@random` : Pour des dimensions aléatoires
+Dimensions are specified in the following format:
+- `number@widthxheight`: For fixed dimensions
+- `number@random`: For random dimensions
 
-Exemples :
-- `4@800x800` : 4 images de 800x800 pixels
-- `2@1920x1080` : 2 images en Full HD
-- `3@random` : 3 images avec des dimensions aléatoires
+Examples:
+- `4@800x800`: 4 images of 800x800 pixels
+- `2@1920x1080`: 2 images in Full HD
+- `3@random`: 3 images with random dimensions
 
-## Structure du Projet
+## Project Structure
 
     pymage-downloader/
     │
-    ├── main.py           # Script principal
-    ├── downloaded_images/ # Dossier des images téléchargées
+    ├── main.py           # Main script
+    ├── downloaded_images/ # Downloaded images folder
     └── README.md         # Documentation
 
-## Journalisation
+## Logging
 
-Le programme enregistre toutes les opérations dans la console avec les informations suivantes :
-- Création du dossier de téléchargement
-- Statut des téléchargements
-- Erreurs éventuelles
+The program logs all operations to the console with the following information:
+- Download directory creation
+- Download status
+- Potential errors
 
-## Contribution
+## Contributing
 
-Les contributions sont les bienvenues ! N'hésitez pas à :
-- Signaler des bugs
-- Proposer des améliorations
-- Soumettre des pull requests
+Contributions are welcome! Feel free to:
+- Report bugs
+- Suggest improvements
+- Submit pull requests
 
-## Licence
+## License
 
-Ce projet est sous licence MIT.
+This project is licensed under the MIT License.
